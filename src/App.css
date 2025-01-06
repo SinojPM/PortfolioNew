@@ -1,0 +1,14 @@
+*{
+  font-family: "Fira Code", serif;
+}
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) { 
+  .proCardWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .proCard{
+  width: 90%;
+ }
+}
