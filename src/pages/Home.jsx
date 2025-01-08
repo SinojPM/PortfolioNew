@@ -25,6 +25,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import TextPlugin from 'gsap/TextPlugin'
 import { ScrollTrigger } from 'gsap/all'
+import resume from "../assets/SINOJ-PM-CV.pdf"
 
 gsap.registerPlugin(useGSAP,ScrollTrigger,TextPlugin)
 
@@ -68,10 +69,10 @@ const Home = () => {
         <div className='bg-dark w-full'>
             <Navbar insideHome={true}/>
             <div id='home' className="grid lg:grid-cols-2 sm:grid-cols-1 lg:h-screen gap 2 px-12 h-5/6 w-full items-center">
-                <div className="w-full items-center justify-center">
+                <div className="w-full flex flex-col items-start justify-center">
                     <h1 className='text-white text-5xl'>Sinoj is a <span className='text-primary name'>web designer</span> and <span className='text-primary name1'>Full-stack developer</span></h1>
                     <p className='text-gray text-xl mt-5'>He crafts responsive websites where technologies meet creativity</p>
-                    <button className='p-5 border border-primary mt-12 text-white text-xl hover:border-white hover:bg-primary'>Download CV!!</button>
+                    <a href={resume} download={"sinoj-resume"} className='p-5 border border-primary mt-12 text-white text-xl hover:border-white hover:bg-primary'>Download CV!!</a>
                 </div>
                 <div className='w-full flex items-center justify-center flex-col'>
                     <img className='w-4/5 h-5/6 heroImg' src={heroImg} alt="" />

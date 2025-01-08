@@ -44,7 +44,7 @@ const ContactForm = () => {
     }
     return (
         <div className='w-full Contact-form'>
-            <form onSubmit={handleSubmit} className="flex w-4/6 flex-col gap-5 mt-5">
+            <form onSubmit={handleSubmit} className="flex w-4/6 sm:w-6/6 flex-col gap-5 mt-5">
                 <input className='w-full h-16 p-5 rounded text-primary' type="text" value={name} onChange={e=>setName(e.target.value)} placeholder='Name' />
                 <input className='w-full h-16 p-5 rounded text-primary ' type="Email" value={Email} onChange={e=>setEmail(e.target.value)} placeholder='Email' />
                 <textarea className='w-full p-5 rounded' cols={30} rows={5}  type="text" value={Message} onChange={e=>setMessage(e.target.value)} placeholder='Name' />
