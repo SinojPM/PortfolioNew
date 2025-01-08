@@ -1,6 +1,16 @@
 import wod from "../assets/image.png"
 import nf from "../assets/NF.png"
+import pf from "../assets/pf.png"
 export const projectData = [
+    {
+        projectName:"Portfolio website",
+        projectImg:pf,
+        technologies:"React,Tailwing,Emailjs,Gsap",
+        live:"",
+        gitFrontEnd:"https://github.com/SinojPM/PortfolioNew",
+        gitBackEnd:"",
+        des:"A responsive Portfolio using React,Tailwind,Gsap and Emailjs for Email service"
+    },
     {
         projectName:"Wheels On Demand",
         projectImg:wod,

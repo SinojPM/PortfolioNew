@@ -205,7 +205,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center">
+                    <div className="w-full flex justify-center items-center">
                         <ContactForm />
                     </div>
                 </div>

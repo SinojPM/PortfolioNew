@@ -14,7 +14,10 @@ const ProjectCard = ({data}) => {
                 {data.des}
             </p>
             <div className="flex justify-evenly">
-            <a href={data.live} target='_blank' className='p-1 border border-primary mt-5 text-white text-l hover:bg-primary'>Live</a>
+            {
+                data.live&&
+                <a href={data.live} target='_blank' className='p-1 border border-primary mt-5 text-white text-l hover:bg-primary'>Live</a>
+            }
             <a href={data.gitFrontEnd} target='_blank' className='p-1 border border-primary mt-5 text-white text-l hover:bg-primary'>GitHub</a>
             {
                 data.gitBackEnd&&
