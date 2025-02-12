@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ProjectCard = ({data}) => {
   return (
-    <div style={{width:"370px",minHeight:"500px"}} className='border border-white text-white proCard hover:animate-pulse'>
+    <div style={{width:"370px",minHeight:"500px"}} className='border border-white text-white proCard hover:animate-pulse overflow-auto'>
         <img src={data?.projectImg} alt="" className="w-full h-2/6" />
         <div className="w-full border border-white p-2 text-center h-auto flex items-center justify-center">
            {data.technologies}

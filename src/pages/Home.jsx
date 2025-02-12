@@ -68,7 +68,7 @@ const Home = () => {
     return (
         <div className='bg-dark w-full'>
             <Navbar insideHome={true}/>
-            <div id='home' className="grid lg:grid-cols-2 sm:grid-cols-1 lg:h-screen gap 2 px-12 h-5/6 w-full items-center">
+            <div id='home' className="grid lg:grid-cols-2 sm:grid-cols-1 gap 2 px-12 w-full items-center">
                 <div className="w-full flex flex-col items-start justify-center">
                     <h1 className='text-white text-5xl'>Sinoj is a <span className='text-primary name'>web designer</span> and <span className='text-primary name1'>Full-stack developer</span></h1>
                     <p className='text-gray text-xl mt-5'>He crafts responsive websites where technologies meet creativity</p>
@@ -83,13 +83,13 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div id='projects' className="mt-20 w-full px-12 lg:h-screen ">
+            <div id='projects' className="mt-20 w-full px-12">
                 <div className="w-full flex justify-between mb-16">
                     <div className="flex w-4/5 items-center">
                         <h3 className='text-white text-5xl'><span className="text-primary">#</span>Projects</h3>
                         <div className="border h-0 border-primary w-4/5"></div>
                     </div>
-                    <a onClick={() => navigate('/projects')} className='text-white hover:text-primary text-xl'>View all <span><i className="fa-solid fa-arrow-right"></i></span></a>
+                    <a onClick={() => navigate('/projects')} className='text-white hover:text-primary lg:text-xl md:text-xl sm:text-l'>View all <span><i className="fa-solid fa-arrow-right"></i></span></a>
                 </div>
                 <div className='w-full grid lg:grid-cols-3 sm:grid-cols-1 gap-5 justify-center'>
                     {
@@ -101,7 +101,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <div id='skills' className='mt-20 w-full px-12 lg:h-screen'>
+            <div id='skills' className='mt-20 w-full px-12'>
                 <div className="w-full flex justify-between mb-16">
                     <div className="flex w-4/5 items-center">
                         <h3 className='text-white text-5xl'><span className="text-primary">#</span>Skills</h3>
@@ -164,7 +164,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div id='abtme' className="mt-20 w-full px-12 lg:h-screen">
+            <div id='abtme' className="mt-20 w-full px-12 mb-40">
                 <div className="w-full flex justify-between mb-16">
                     <div className="flex w-4/5 items-center">
                         <h3 className='text-white text-5xl'><span className="text-primary">#</span>About-me</h3>
